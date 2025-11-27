@@ -28,7 +28,7 @@ h2 {
   color: rgb(50, 50, 50);
   font-weight: 525;
   text-transform: capitalize;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 h3 {
@@ -183,11 +183,12 @@ nav {
   height: 45px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #333333;
+  background-color: red;
   color: whitesmoke;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  padding 1%;
 }
 
 .whitesmk {
