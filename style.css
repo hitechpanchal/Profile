@@ -236,9 +236,8 @@ section .lrg {
 
 .icon{
   display: block;
-  height: 65px;
+  height: 64px;
   width: auto;
   margin-left: auto;
   margin-right: auto;
-  max-width: 50px;
 }
