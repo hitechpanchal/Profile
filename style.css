@@ -127,12 +127,14 @@ a {
 /* Web Links */
 .addr a {
   color: var(--main-text-color);
-  transition: transform 0.2s;
 }
 
 a:hover {
   background-color: var(--true-blue);
   color: var(--main-text-color);
+  border-radius: 5px;
+  padding: 1%;
+  transition: background-color 0.75s ease-out, transform 0.2s ease-out;
 }
 
 .lrg {
@@ -184,6 +186,7 @@ nav {
   text-decoration: none;
   font-weight: bold;
   text-transform: lowercase;
+  margin-right: 5px;
 }
 
 .button {
