@@ -163,7 +163,8 @@ nav {
 .nav-list {
   display: flex;
   margin-top: 0;
-  justify-content: center;
+  /* margin-right: 3%; */
+  justify-content: right;
   font-size: small;
   align-items: center;
   background-color: #face18;
@@ -175,6 +176,7 @@ nav {
   text-decoration: none;
   font-weight: bold;
   text-transform: lowercase;
+  margin-right: 10px;
 }
 
 .button {
