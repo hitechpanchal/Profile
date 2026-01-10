@@ -1,0 +1,243 @@
+#objective {
+  background-color: rgb(245, 245, 230);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 3%;
+  text-align: right;
+}
+
+/* General */
+html {
+  box-sizing: border-box;
+  /* border: rgb(50, 50, 50) solid 2px; */
+}
+
+h1 {
+  display: block;
+  text-align: right;
+  color: rgb(245, 245, 245);
+  font-weight: normal;
+  text-transform: uppercase;
+  font-weight: 200;
+  border-bottom: rgb(245, 245, 245) solid 2px;
+  letter-spacing: 3px;
+}
+
+h2 {
+  display: block;
+  color: rgb(50, 50, 50);
+  font-weight: 525;
+  text-transform: capitalize;
+  padding-top: 50px;
+}
+
+h3 {
+  display: block;
+  color: rgb(75, 75, 75);
+  font-weight: 418;
+}
+
+/* Paragraphs and lists */
+p {
+  display: block;
+  text-indent: 0;
+  margin: auto 3%;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+ul {
+  text-indent: 0;
+  margin: auto 3%;
+  font-size: 0.9rem;
+  font-weight: 300;
+  list-style-type: square;
+}
+
+ol li {
+  text-indent: 0;
+  margin: auto 3%;
+  font-size: 0.86rem;
+  font-weight: 300;
+}
+
+b {
+  font-weight: 552;
+}
+
+.bld-xtra {
+  font-weight: 400;
+}
+.bdy {
+  display: block;
+  display: block;
+  color: #010203;
+  background-color: rgb(255, 255, 245);
+  font-family: "Momo Trust Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  margin: 0;
+}
+
+/* Header and footer body*/
+footer {
+  color: #face18;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(50, 50, 50);
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 10%;
+}
+
+header {
+  /* display: flex;
+  justify-content: right;
+  align-items: center; */
+  background-color: rgb(50, 50, 50);
+}
+
+.prof-pic {
+  width: 118px;
+  height: auto;
+  max-width: 125px;
+  border: 1px solid #face18;
+}
+
+
+
+
+/* hyperlinks */
+.addr {
+  text-align: right;
+  color: rgb(245, 245, 245);
+  padding: 5%;
+  margin: 0;
+}
+
+/* Web Links */
+.addr a {
+  color: rgb(245, 245, 245);
+}
+
+a:hover {
+  background-color: #006aff;
+  color: #face18;
+  text-decoration: none;
+}
+
+
+.lrg {
+  font-size: larger;
+}
+
+.box {
+  display: block;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: rgb(255, 255, 245);
+  max-width: 800px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.col {
+  color: rgb(250, 235, 215);
+}
+
+.list-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Items  */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+}
+
+.nav-list {
+  display: flex;
+  margin-top: 0;
+  justify-content: center;
+  font-size: small;
+  align-items: center;
+  background-color: #face18;
+}
+
+.nav-list a {
+  padding: 5px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.button {
+  display: flex;
+  width: 100px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding 1%;
+}
+
+.whitesmk {
+  color: whitesmoke;
+}
+
+/* Tables */
+table {
+  text-indent: 0;
+  margin: auto 6%;
+  font-size: 0.86rem;
+  font-weight: 300;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 5px;
+}
+
+tr {
+  font-size: 0.86rem;
+  vertical-align: middle;
+}
+
+td {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.td-dark {
+  background-color: rgb(245, 245, 230);
+  white-space: nowrap;
+  border-right: 2px solid rgb(51, 51, 51, 45%);
+  padding-right: 5px;
+}
+
+/* .highlight{
+  background-color: #face66;
+  background-color: rgb(245, 245, 230);
+  padding : 3px;
+  border-radius: 5px;
+} */
+
+section .lrg {
+  color: #face18;
+}
+
+.icon{
+  display: block;
+  height: 64px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}

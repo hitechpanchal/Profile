@@ -167,10 +167,11 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  height: 45px;
 }
 
 .nav-list {
+  padding: 5px;
   display: flex;
   margin-top: 0;
   padding-right: 2px;
