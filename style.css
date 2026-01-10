@@ -2,6 +2,7 @@
   --main-bg-color: rgb(50, 50, 50);
   --main-text-color: rgb(255, 255, 245);
   --accent-color: #face18;
+  --true-blue: #006aff;
 }
 
 #objective {
@@ -15,9 +16,8 @@
 /* General */
 html {
   box-sizing: border-box;
-  /* border: rgb(50, 50, 50) solid 2px; */
 }
-
+/* Headers */
 h1 {
   display: block;
   text-align: right;
@@ -111,10 +111,12 @@ header {
   border-radius: 5px;
 }
 
-
-
-
 /* hyperlinks */
+a {
+  text-decoration: none;
+  color: var(--true-blue);
+}
+
 .addr {
   text-align: right;
   color: var(--main-text-color);
@@ -125,14 +127,13 @@ header {
 /* Web Links */
 .addr a {
   color: var(--main-text-color);
+  transition: transform 0.2s;
 }
 
 a:hover {
-  background-color: #006aff;
-  color: var(--accent-color);
-  text-decoration: none;
+  background-color: var(--true-blue);
+  color: var(--main-text-color);
 }
-
 
 .lrg {
   font-size: larger;
@@ -187,16 +188,17 @@ nav {
 
 .button {
   display: flex;
-  width: 100px;
-  height: 45px;
+  font-size: 1.45em;
+  width: 52px;
+  height: 24px;
   margin-left: auto;
   margin-right: auto;
-  background-color: red;
-  color: whitesmoke;
+  /* background-color: var(--main-bg-color); */
+  color: var(--main-bg-color);
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  padding 1%;
+  padding: 1%;
 }
 
 .whitesmk {
@@ -231,12 +233,11 @@ td {
   padding-right: 5px;
 }
 
-
 section .lrg {
-  color:var(--accent-color);
+  color: var(--accent-color);
 }
 
-.icon{
+.icon {
   display: block;
   height: 64px;
   width: auto;
