@@ -173,7 +173,7 @@ nav {
 .nav-list {
   display: flex;
   margin-top: 0;
-  padding: 5px;
+  padding-right: 2px;
   justify-content: right;
   font-size: small;
   align-items: right;
