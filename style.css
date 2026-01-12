@@ -242,8 +242,20 @@ section .lrg {
 
 .icon {
   display: block;
-  height: 64px;
+  height: 54px;
   width: auto;
   margin-left: auto;
   margin-right: auto;
+}
+.fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
