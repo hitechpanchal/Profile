@@ -256,6 +256,6 @@ section .lrg {
 .fa-shake,
 .fa-spin,
 .fa-spin-pulse {
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
