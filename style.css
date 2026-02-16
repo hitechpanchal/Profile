@@ -301,6 +301,20 @@ header.menu-open .hamburger {
 }
 
 @media (max-width: 768px) {
+  /* Headers */
+h1 {
+  display: block;
+  text-align: right;
+  color: var(--main-text-color);
+  font-weight: normal;
+  text-transform: uppercase;
+  font-weight: 200;
+  /* border-bottom: var(--main-text-color) solid 2px; */
+  letter-spacing: 3px;
+  margin-top: 3%;
+}
+
+
   .hamburger {
     display: block;
   }
