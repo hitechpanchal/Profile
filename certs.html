@@ -1,114 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Momo+Trust+Sans:wght@200..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
-      rel="stylesheet"
-    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Certifications</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Sans:wght@200..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet" />
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" type=image/png href="./assets/flavicon.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/flavicon.png" />
   </head>
-
+  
   <body class="bdy">
     <header>
+      <nav>
+        <button class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="list-reset nav-list" id="nav-list">
+          <!-- <li><a href="./index.html">▲ Top</a></li> -->
+          <!-- <li><a href="#experience">Experience</a></li> -->
+          <li><a href="index.html#emp-hist">Employments</a></li>
+          <li><a href="index.html#ed-summ">Education</a></li>
+          <li><a href="index.html#technical">Technical</a></li>
+          <!-- <li><a href="#soft-skill">Soft Skills</a> ● </li> -->
+          <li><a href="index.html#cert">Certifications</a></li>
+          <!-- <li><a href="#misc">Misc</a> ● </li> -->
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
       <div class="addr" id="bg-dark">
         <h1>Certifications</h1>
       </div>
     </header>
 
-    <div class="box">
+    <main class="box">
       <!-- Harvard -->
-      <h2>Harvard</h2>
-      <ol>
-        <li>
-          <a
-            href="https://certificates.cs50.io/7a693442-875c-4981-9cfa-d078d0701385.png?size=letter"
-            target="_blank"
-            >CS50-Understanding Technology</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://cs50.harvard.edu/certificates/2a4d0d6b-fe90-403e-84ba-f4590ae191df.png?size=letter"
-            target="_blank"
-            >CS50-Introduction to Programming with Scratch</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://certificates.cs50.io/aa0346c5-5738-40ff-a7eb-71f3770c9b0b.png?size=letter"
-            target="_blank"
-            >CS50-Introduction to Programming with Python</a
-          >
-        </li>
-      </ol>
+      <section id="harvard">
+        <h2>Harvard</h2>
+        <ul>
+          <li>
+            <a href="https://certificates.cs50.io/7a693442-875c-4981-9cfa-d078d0701385.png?size=letter" target="_blank" rel="noopener noreferrer">
+              CS50 - Understanding Technology
+            </a>
+          </li>
+          <li>
+            <a href="https://cs50.harvard.edu/certificates/2a4d0d6b-fe90-403e-84ba-f4590ae191df.png?size=letter" target="_blank" rel="noopener noreferrer">
+              CS50 - Introduction to Programming with Scratch
+            </a>
+          </li>
+          <li>
+            <a href="https://certificates.cs50.io/aa0346c5-5738-40ff-a7eb-71f3770c9b0b.png?size=letter" target="_blank" rel="noopener noreferrer">
+              CS50 - Introduction to Programming with Python
+            </a>
+          </li>
+        </ul>
+      </section>
 
       <!-- SoloLearn -->
-
-      <h2>SoloLearn</h2>
-      <ol>
-        <li>
-          <a
-            href="https://www.sololearn.com/certificates/CT-8W2YHNEX"
-            target="_blank"
-            >Python Core</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.sololearn.com/certificates/CT-EPGFVEMT"
-            target="_blank"
-            >Javascript</a
-          >
-        </li>
-
-        <li>
-          <a
-            href="https://www.sololearn.com/certificates/CT-NQOWJD9Z"
-            target="_blank"
-            >CSS</a
-          >
-        </li>
-      </ol>
+      <section id="sololearn">
+        <h2>SoloLearn</h2>
+        <ul>
+          <li>
+            <a href="https://www.sololearn.com/certificates/CT-8W2YHNEX" target="_blank" rel="noopener noreferrer">
+              Python Core
+            </a>
+          </li>
+          <li>
+            <a href="https://www.sololearn.com/certificates/CT-EPGFVEMT" target="_blank" rel="noopener noreferrer">
+              Javascript
+            </a>
+          </li>
+          <li>
+            <a href="https://www.sololearn.com/certificates/CT-NQOWJD9Z" target="_blank" rel="noopener noreferrer">
+              CSS
+            </a>
+          </li>
+        </ul>
+      </section>
+      
       <!-- CompTIA -->
-      <h2>CompTIA</h2>
-      <ul>
-        <li>
-          <a
-            href="https://skillsoft.digitalbadges.skillsoft.com/75193b69-b511-45d5-aecd-8e9b1dfd4dc5"
-            target="_blank"
-            >Linux+: Introduction to Linux & the Command Line</a
-          >
-        </li>
-      </ul>
-      <!-- BricsCAD® -->
-      <h2>BricsCAD®</h2>
-      <ol>
-        <li>
-          <a href="https://mycourse.app/VmKfBMGd1SRjJArwP" target="_blank"
-            >Installation and Licensing</a
-          >
-        </li>
-        <li>
-          <a href="https://mycourse.app/bKvQ6SHlXoBkJtvIa" target="_blank"
-            >AutoCAD® to BricsCAD® (V26)</a
-          >
-        </li>
-        <!-- <li><a href=""></a></li> -->
-      </ol>
-    </div>
+      <section id="comptia">
+        <h2>CompTIA</h2>
+        <ul>
+          <li>
+            <a href="https://skillsoft.digitalbadges.skillsoft.com/75193b69-b511-45d5-aecd-8e9b1dfd4dc5" target="_blank" rel="noopener noreferrer">
+              Linux+: Introduction to Linux & the Command Line
+            </a>
+          </li>
+        </ul>
+      </section>
+      
+      <!-- BricsCAD -->
+      <section id="bricsys">
+        <h2>BricsCAD®</h2>
+        <ul>
+          <li>
+            <a href="https://mycourse.app/VmKfBMGd1SRjJArwP" target="_blank" rel="noopener noreferrer">
+              Installation and Licensing
+            </a>
+          </li>
+          <li>
+            <a href="https://mycourse.app/bKvQ6SHlXoBkJtvIa" target="_blank" rel="noopener noreferrer">
+              AutoCAD® to BricsCAD® (V26)
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-    <div>
-      <a class="button" href="./index.html">🏠︎</a>
+    <div style="margin: 2rem 0;">
+      <a class="button" href="./index.html" aria-label="Home">🏠︎</a>
     </div>
 
     <footer>
       <p>@hitechpanchal, 2025.</p>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/f918492b80.js"
+      crossorigin="anonymous"
+    ></script>
+     <script src="./script.js"></script>
   </body>
 </html>

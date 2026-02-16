@@ -1,0 +1,44 @@
+
+/* Accessible Hiding */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+}
+
+/* Technical Proficiency Grid (replacing tables) */
+.tech-list {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 10px 15px;
+  margin: auto 6%;
+}
+
+.tech-list dt {
+  background-color: var(--highlight-color, rgb(245, 245, 230)); /* matching .td-dark */
+  white-space: nowrap;
+  border-right: 2px solid rgba(51, 51, 51, 0.45);
+  padding: 2px 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center; /* Vertical center alignment */
+}
+
+.tech-list dd {
+  margin: 0;
+  padding: 2px 5px;
+  display: flex;
+  align-items: center; /* Vertical center alignment */
+}
+
+/* Ensure consistent font sizes in description lists */
+.tech-list dt, .tech-list dd {
+    font-size: 0.86rem;
+    font-weight: 300;
+}

@@ -1,4 +1,5 @@
 :root {
+  --nav-bg-color: rgb(64, 88, 92);
   --main-bg-color: rgb(50, 50, 50);
   --main-text-color: rgb(255, 255, 245);
   --accent-color: #face18;
@@ -25,7 +26,7 @@ h1 {
   font-weight: normal;
   text-transform: uppercase;
   font-weight: 200;
-  border-bottom: var(--main-text-color) solid 2px;
+  /* border-bottom: var(--main-text-color) solid 2px; */
   letter-spacing: 3px;
 }
 
@@ -167,95 +168,182 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  height: 45px;
+  height: 54px; /* Increased from 45px */
+  z-index: 1000; /* Ensure on top */
+  display: flex;
+  align-items: center; /* Vertically center */
+  justify-content: flex-end; /* Align to right */
+  background-color: var(--main-bg-color); /* Dark background */
 }
 
 .nav-list {
-  padding: 5px;
+  padding: 0 20px;
   display: flex;
   margin-top: 0;
   padding-right: 2px;
   justify-content: right;
-  font-size: small;
-  align-items: right;
-  background-color: var(--accent-color);
+  font-size: 1rem; /* Increased from small */
+  align-items: center;
+  border-bottom: 2px solid var(--accent-color); /* Yellow accent line */
+  height: 100%; /* Fill nav height */
+  width: 100%; /* Fill width */
 }
 
 .nav-list a {
   display: inline-block;
   text-decoration: none;
-  font-weight: bold;
-  text-transform: lowercase;
-  margin-right: 5px;
+  font-weight: normal;
+  /* text-transform: lowercase; */
+  margin-right: 25px; /* Increased spacing */
+  color: var(--main-text-color); /* Light text */
+  transition: color 0.3s ease;
 }
 
-.button {
-  display: flex;
-  font-size: 1.45em;
-  width: 52px;
-  height: 24px;
-  margin-left: auto;
-  margin-right: auto;
-  /* background-color: var(--main-bg-color); */
-  color: var(--main-bg-color);
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  padding: 1%;
+.nav-list a:hover {
+  color: var(--true-blue); /* Yellow hover */
+  background-color: transparent; /* Remove block background */
+  transform: translateY(-2px); /* Slight lift */
 }
 
-.whitesmk {
-  color: whitesmoke;
+/* Responsive Navbar */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--main-text-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  right: 20px;
+  z-index: 1003; /* Higher than everything */
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
-/* Tables */
-table {
-  text-indent: 0;
-  margin: auto 6%;
-  font-size: 0.86rem;
-  font-weight: 300;
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 5px;
+/* Scrolled State - visible on light backgrounds */
+header.scrolled .hamburger {
+  color: var(--true-blue); /* Dark color when scrolled */
 }
 
-tr {
-  font-size: 0.86rem;
-  vertical-align: middle;
-}
-
-td {
-  padding-right: 5px;
-  padding-left: 5px;
-}
-
-.td-dark {
-  background-color: rgb(245, 245, 230);
-  white-space: nowrap;
-  border-right: 2px solid rgb(51, 51, 51, 45%);
-  padding-right: 5px;
-}
-
-section .lrg {
-  color: var(--accent-color);
+/* Menu Open State - visible on dark menu background */
+header.menu-open .hamburger {
+  color: var(--main-text-color) !important; /* Force white/light when menu is open */
 }
 
 .icon {
-  display: block;
-  height: 54px;
+  display: inline-block; /* Change to inline-block for text-align to work on parent, or keep block with margins. Let's try inline-block for better control with text-align center on parent */
+  height: 54px; /* Reduced to 40px */
   width: auto;
-  margin-left: auto;
-  margin-right: auto;
+  vertical-align: middle;
 }
-.fa-beat,
-.fa-bounce,
-.fa-fade,
-.fa-beat-fade,
-.fa-flip,
-.fa-pulse,
-.fa-shake,
-.fa-spin,
-.fa-spin-pulse {
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+
+.cent {
+  text-align: center;
+  margin: 20px 0; /* Add vertical spacing */
+}
+
+/* Remove hover effect for the PDF icon link */
+.cent a:hover {
+  background-color: transparent;
+  padding: 0;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Stop animation on hover */
+.cent a:hover .icon {
+  animation: none;
+}
+/* Accessible Hiding */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+}
+
+/* Technical Proficiency Grid (replacing tables) */
+.tech-list {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 10px 15px;
+  margin: auto 6%;
+}
+
+.tech-list dt {
+  background-color: var(--highlight-color, rgb(245, 245, 230)); /* matching .td-dark */
+  white-space: nowrap;
+  border-right: 2px solid rgba(51, 51, 51, 0.45);
+  padding: 2px 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center; /* Vertical center alignment */
+}
+
+.tech-list dd {
+  margin: 0;
+  padding: 2px 5px;
+  display: flex;
+  align-items: center; /* Vertical center alignment */
+}
+
+/* Ensure consistent font sizes in description lists */
+.tech-list dt, .tech-list dd {
+    font-size: 0.86rem;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 60px; /* increased to match nav */
+    background-color: var(--main-bg-color); /* Dark background */
+    border-bottom: 2px solid var(--accent-color);
+    position: fixed; /* Changed to fixed to stay on screen */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: auto;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+  }
+
+  .nav-list.show {
+    display: flex;
+  }
+
+  .nav-list li {
+    text-align: left; /* Changed from center to left */
+    padding: 15px 20px; /* Added left/right padding */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+  }
+
+  .nav-list li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-list a {
+    display: block;
+    width: 100%;
+    font-size: 1.1rem; /* Slightly smaller font */
+    color: var(--main-text-color);
+    font-weight: 300; /* Lighter weight */
+  }
+  
+  .nav-list a:hover {
+     color: var(--accent-color);
+  }
 }

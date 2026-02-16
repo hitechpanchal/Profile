@@ -57,7 +57,10 @@
     <!-- header/address/navigation -->
     <header>
       <nav>
-        <ul class="list-reset nav-list">
+        <button class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="list-reset nav-list" id="nav-list">
           <!-- <li><a href="./index.html">▲ Top</a></li> -->
           <!-- <li><a href="#experience">Experience</a></li> -->
           <li><a href="#emp-hist">Employments</a></li>
@@ -66,7 +69,7 @@
           <!-- <li><a href="#soft-skill">Soft Skills</a> ● </li> -->
           <li><a href="#cert">Certifications</a></li>
           <!-- <li><a href="#misc">Misc</a> ● </li> -->
-          <li><a href="#adr">▲ Top</a></li>
+          <li><a href="#adr">Home</a></li>
         </ul>
       </nav>
       <section id="adr">
@@ -76,7 +79,7 @@
             <img
               class="prof-pic"
               src="./assets/images/profpicres.jpg"
-              alt="candidate's picture"
+              alt="Hitesh Panchal Profile Picture"
             /><br />
             <span class="lrg"><b>Hitesh Panchal</b></span
             ><br />
@@ -93,7 +96,7 @@
     </header>
     <!-- Objective -->
     <section id="objective">
-      <h2 style="display: none">Objective</h2>
+      <h2 class="sr-only">Objective</h2>
       <p><b>Tech-driven. Solution-focused. Always learning.</b></p>
       <p>
         <i
@@ -205,60 +208,35 @@
         <h2>Technical Proficiency</h2>
         <h3>System Software</h3>
 
-        <table>
-          <tr>
-            <td class="td-dark">▣ <b>Microsoft</b></td>
+        <dl class="tech-list">
+          <dt>▣ Microsoft</dt>
+          <dd>DOS to Windows 11, Server OS installation, configuration, deployment.</dd>
 
-            <td>
-              DOS to Windows 11, Server OS installation, configuration,
-              deployment.
-            </td>
-          </tr>
-          <tr>
-            <td class="td-dark">▣ <b>Linux</b></td>
+          <dt>▣ Linux</dt>
+          <dd>Ubuntu, CentOS, Mint.</dd>
 
-            <td>Ubuntu, CentOS, Mint.</td>
-          </tr>
-          <tr>
-            <td class="td-dark">▣ <b>Security</b></td>
-
-            <td>SonicWall, Kaspersky, Quickheal.</td>
-          </tr>
-        </table>
+          <dt>▣ Security</dt>
+          <dd>SonicWall, Kaspersky, Quickheal.</dd>
+        </dl>
 
         <h3>Application Software</h3>
 
-        <table>
-          <tr>
-            <td class="td-dark">▣ <b>Office Tools</b></td>
-            <td>Microsoft Word/Excel, Acrobat Pro, Nitro PDF, Abbyy</td>
-          </tr>
-          <tr>
-            <td class="td-dark">▣ <b>Graphics</b></td>
-            <td>
-              Photoshop (Intermediate&ndash;Professional), Illustrator
-              (Beginner&ndash;Intermediate), AutoCAD, BricsCAD, ZWCAD
-            </td>
-          </tr>
-          <tr>
-            <td class="td-dark">▣ <b>eBook Restoration</b></td>
+        <dl class="tech-list">
+          <dt>▣ Office Tools</dt>
+          <dd>Microsoft Word/Excel, Acrobat Pro, Nitro PDF, Abbyy</dd>
 
-            <td>
-              Abbyy, Calibre, Sigil &mdash; Creating ePUB, Mobi, and Kindle
-              formats
-            </td>
-          </tr>
-          <tr>
-            <td class="td-dark">▣ <b>Markup</b></td>
+          <dt>▣ Graphics</dt>
+          <dd>Photoshop (Intermediate&ndash;Professional), Illustrator (Beginner&ndash;Intermediate), AutoCAD, BricsCAD, ZWCAD</dd>
 
-            <td>HTML, CSS (for eBooks), Markdown</td>
-          </tr>
-          <tr>
-            <td class="td-dark">▣ <b>Programming</b></td>
+          <dt>▣ eBook Restoration</dt>
+          <dd>Abbyy, Calibre, Sigil &mdash; Creating ePUB, Mobi, and Kindle formats</dd>
 
-            <td>Python, RegEx</td>
-          </tr>
-        </table>
+          <dt>▣ Markup</dt>
+          <dd>HTML, CSS (for eBooks), Markdown</dd>
+
+          <dt>▣ Programming</dt>
+          <dd>Python, RegEx</dd>
+        </dl>
       </section>
       <!-- Soft Skills -->
       <section id="soft-skill">
@@ -321,7 +299,7 @@
         ><img
           class="icon fa-beat-fade"
           src="./assets/images/pdf.png"
-          alt="click here to download in PDF format"
+          alt="Download Resume in PDF format"
       /></a>
     </div>
 
@@ -332,5 +310,6 @@
       src="https://kit.fontawesome.com/f918492b80.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
