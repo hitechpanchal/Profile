@@ -28,6 +28,7 @@ h1 {
   font-weight: 200;
   /* border-bottom: var(--main-text-color) solid 2px; */
   letter-spacing: 3px;
+  margin-top: 3;
 }
 
 h2 {
