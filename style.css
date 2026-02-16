@@ -312,6 +312,7 @@ h1 {
   /* border-bottom: var(--main-text-color) solid 2px; */
   letter-spacing: 3px;
   margin-top: 10%;
+  padding-top: 20px;
 }
 
 
