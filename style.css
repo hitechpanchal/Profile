@@ -135,8 +135,9 @@ a:hover {
   background-color: var(--true-blue);
   color: var(--main-text-color);
   border-radius: 5px;
-  padding: 1%;
-  transition: background-color 0.75s ease-out, transform 0.2s ease-out;
+  padding: 0.5%;
+  /* transition: background-color 0.92s ease-out;
+  transform 0.92s ease-out; */
 }
 
 .lrg {
@@ -229,7 +230,9 @@ header.scrolled .hamburger {
 
 /* Menu Open State - visible on dark menu background */
 header.menu-open .hamburger {
-  color: var(--main-text-color) !important; /* Force white/light when menu is open */
+  color: var(
+    --main-text-color
+  ) !important; /* Force white/light when menu is open */
 }
 
 .icon {
@@ -258,15 +261,15 @@ header.menu-open .hamburger {
 }
 /* Accessible Hiding */
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap; /* added line */
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
 }
 
 /* Technical Proficiency Grid (replacing tables) */
@@ -278,7 +281,10 @@ header.menu-open .hamburger {
 }
 
 .tech-list dt {
-  background-color: var(--highlight-color, rgb(245, 245, 230)); /* matching .td-dark */
+  background-color: var(
+    --highlight-color,
+    rgb(245, 245, 230)
+  ); /* matching .td-dark */
   white-space: nowrap;
   border-right: 2px solid rgba(51, 51, 51, 0.45);
   padding: 2px 5px;
@@ -295,26 +301,26 @@ header.menu-open .hamburger {
 }
 
 /* Ensure consistent font sizes in description lists */
-.tech-list dt, .tech-list dd {
-    font-size: 0.86rem;
-    font-weight: 300;
+.tech-list dt,
+.tech-list dd {
+  font-size: 0.86rem;
+  font-weight: 300;
 }
 
 @media (max-width: 768px) {
   /* Headers */
-h1 {
-  display: block;
-  text-align: right;
-  color: var(--main-text-color);
-  font-weight: normal;
-  text-transform: uppercase;
-  font-weight: 200;
-  /* border-bottom: var(--main-text-color) solid 2px; */
-  letter-spacing: 3px;
-  margin-top: 10%;
-  padding-top: 20px;
-}
-
+  h1 {
+    display: block;
+    text-align: right;
+    color: var(--main-text-color);
+    font-weight: normal;
+    text-transform: uppercase;
+    font-weight: 200;
+    /* border-bottom: var(--main-text-color) solid 2px; */
+    letter-spacing: 3px;
+    margin-top: 10%;
+    padding-top: 20px;
+  }
 
   .hamburger {
     display: block;
@@ -333,7 +339,7 @@ h1 {
     z-index: 1000;
     height: auto;
     padding-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   }
 
   .nav-list.show {
@@ -358,8 +364,8 @@ h1 {
     color: var(--main-text-color);
     font-weight: 300; /* Lighter weight */
   }
-  
+
   .nav-list a:hover {
-     color: var(--accent-color);
+    color: var(--accent-color);
   }
 }
