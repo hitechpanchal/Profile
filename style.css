@@ -116,10 +116,28 @@ header {
 }
 
 /* hyperlinks */
-a {
+/* a {
   text-decoration: none;
   color: var(--true-blue);
+} */
+
+a {
+  /* box-shadow: inset 0 0 0 0 #54b3d6; */
+  color: var(--true-blue);
+  background-color: ;
+  text-decoration: none;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .5s ease-in-out, background-color .5s ease-in-out;
 }
+a:hover 
+{
+  background-color: var(--main-bg-color);
+  text-decoration: double;
+  /* box-shadow: inset 100px 0 0 0 #54b3d6; */
+  color: var(--accent-color);
+}
+
 
 .addr {
   text-align: right;
@@ -133,10 +151,10 @@ a {
   color: var(--main-text-color);
 }
 
-a:hover {
+/* a:hover {
   color: #F44336;
   /* text color change */
-  box-shadow: inset 100px 0 0 0 var(--link-color);
+  /* box-shadow: inset 100px 0 0 0 var(--link-color); */
   /* expands background */
 
   /* color: #F44336;  */
@@ -146,7 +164,7 @@ a:hover {
   padding: 0.5%;
   transition: background-color 0.92s ease-out;
   transform 0.92s ease-out; */
-}
+} */
 
 .lrg {
   font-size: larger;
