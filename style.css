@@ -18,6 +18,7 @@
 html {
   box-sizing: border-box;
 }
+
 /* Headers */
 h1 {
   display: block;
@@ -76,6 +77,7 @@ b {
 .bld-xtra {
   font-weight: 400;
 }
+
 .bdy {
   display: block;
   display: block;
@@ -132,11 +134,17 @@ a {
 }
 
 a:hover {
-  background-color: var(--true-blue);
+  color: #F44336;
+  /* text color change */
+  box-shadow: inset 100px 0 0 0 var(--link-color);
+  /* expands background */
+
+  /* color: #F44336;  */
+  /* background-color: var(--true-blue);
   color: var(--main-text-color);
   border-radius: 5px;
   padding: 0.5%;
-  /* transition: background-color 0.92s ease-out;
+  transition: background-color 0.92s ease-out;
   transform 0.92s ease-out; */
 }
 
@@ -170,12 +178,17 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  height: 54px; /* Increased from 45px */
-  z-index: 1000; /* Ensure on top */
+  height: 54px;
+  /* Increased from 45px */
+  z-index: 1000;
+  /* Ensure on top */
   display: flex;
-  align-items: center; /* Vertically center */
-  justify-content: flex-end; /* Align to right */
-  background-color: var(--main-bg-color); /* Dark background */
+  align-items: center;
+  /* Vertically center */
+  justify-content: flex-end;
+  /* Align to right */
+  background-color: var(--main-bg-color);
+  /* Dark background */
 }
 
 .nav-list {
@@ -184,11 +197,15 @@ nav {
   margin-top: 0;
   padding-right: 2px;
   justify-content: right;
-  font-size: 1rem; /* Increased from small */
+  font-size: 1rem;
+  /* Increased from small */
   align-items: center;
-  border-bottom: 2px solid var(--accent-color); /* Yellow accent line */
-  height: 100%; /* Fill nav height */
-  width: 100%; /* Fill width */
+  border-bottom: 2px solid var(--accent-color);
+  /* Yellow accent line */
+  height: 100%;
+  /* Fill nav height */
+  width: 100%;
+  /* Fill width */
 }
 
 .nav-list a {
@@ -196,15 +213,20 @@ nav {
   text-decoration: none;
   font-weight: normal;
   /* text-transform: lowercase; */
-  margin-right: 25px; /* Increased spacing */
-  color: var(--main-text-color); /* Light text */
+  margin-right: 25px;
+  /* Increased spacing */
+  color: var(--main-text-color);
+  /* Light text */
   transition: color 0.3s ease;
 }
 
 .nav-list a:hover {
-  color: var(--true-blue); /* Yellow hover */
-  background-color: transparent; /* Remove block background */
-  transform: translateY(-2px); /* Slight lift */
+  color: var(--true-blue);
+  /* Yellow hover */
+  background-color: transparent;
+  /* Remove block background */
+  transform: translateY(-2px);
+  /* Slight lift */
 }
 
 /* Responsive Navbar */
@@ -216,35 +238,41 @@ nav {
   font-size: 1.5rem;
   cursor: pointer;
   position: absolute;
-  top: 50%; /* Center vertically */
+  top: 50%;
+  /* Center vertically */
   transform: translateY(-50%);
   right: 20px;
-  z-index: 1003; /* Higher than everything */
-  transition: color 0.3s ease; /* Smooth color transition */
+  z-index: 1003;
+  /* Higher than everything */
+  transition: color 0.3s ease;
+  /* Smooth color transition */
 }
 
 /* Scrolled State - visible on light backgrounds */
 header.scrolled .hamburger {
-  color: var(--true-blue); /* Dark color when scrolled */
+  color: var(--true-blue);
+  /* Dark color when scrolled */
 }
 
 /* Menu Open State - visible on dark menu background */
 header.menu-open .hamburger {
-  color: var(
-    --main-text-color
-  ) !important; /* Force white/light when menu is open */
+  color: var(--main-text-color) !important;
+  /* Force white/light when menu is open */
 }
 
 .icon {
-  display: inline-block; /* Change to inline-block for text-align to work on parent, or keep block with margins. Let's try inline-block for better control with text-align center on parent */
-  height: 54px; /* Reduced to 40px */
+  display: inline-block;
+  /* Change to inline-block for text-align to work on parent, or keep block with margins. Let's try inline-block for better control with text-align center on parent */
+  height: 54px;
+  /* Reduced to 40px */
   width: auto;
   vertical-align: middle;
 }
 
 .cent {
   text-align: center;
-  margin: 20px 0; /* Add vertical spacing */
+  margin: 20px 0;
+  /* Add vertical spacing */
 }
 
 /* Remove hover effect for the PDF icon link */
@@ -259,6 +287,7 @@ header.menu-open .hamburger {
 .cent a:hover .icon {
   animation: none;
 }
+
 /* Accessible Hiding */
 .sr-only {
   position: absolute;
@@ -268,7 +297,8 @@ header.menu-open .hamburger {
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  white-space: nowrap; /* added line */
+  white-space: nowrap;
+  /* added line */
   border: 0;
 }
 
@@ -281,23 +311,24 @@ header.menu-open .hamburger {
 }
 
 .tech-list dt {
-  background-color: var(
-    --highlight-color,
-    rgb(245, 245, 230)
-  ); /* matching .td-dark */
+  background-color: var(--highlight-color,
+      rgb(245, 245, 230));
+  /* matching .td-dark */
   white-space: nowrap;
   border-right: 2px solid rgba(51, 51, 51, 0.45);
   padding: 2px 5px;
   font-weight: bold;
   display: flex;
-  align-items: center; /* Vertical center alignment */
+  align-items: center;
+  /* Vertical center alignment */
 }
 
 .tech-list dd {
   margin: 0;
   padding: 2px 5px;
   display: flex;
-  align-items: center; /* Vertical center alignment */
+  align-items: center;
+  /* Vertical center alignment */
 }
 
 /* Ensure consistent font sizes in description lists */
@@ -308,6 +339,7 @@ header.menu-open .hamburger {
 }
 
 @media (max-width: 768px) {
+
   /* Headers */
   h1 {
     display: block;
@@ -330,10 +362,13 @@ header.menu-open .hamburger {
     display: none;
     flex-direction: column;
     width: 100%;
-    margin-top: 60px; /* increased to match nav */
-    background-color: var(--main-bg-color); /* Dark background */
+    margin-top: 60px;
+    /* increased to match nav */
+    background-color: var(--main-bg-color);
+    /* Dark background */
     border-bottom: 2px solid var(--accent-color);
-    position: fixed; /* Changed to fixed to stay on screen */
+    position: fixed;
+    /* Changed to fixed to stay on screen */
     top: 0;
     left: 0;
     z-index: 1000;
@@ -347,8 +382,10 @@ header.menu-open .hamburger {
   }
 
   .nav-list li {
-    text-align: left; /* Changed from center to left */
-    padding: 15px 20px; /* Added left/right padding */
+    text-align: left;
+    /* Changed from center to left */
+    padding: 15px 20px;
+    /* Added left/right padding */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     width: 100%;
   }
@@ -360,9 +397,11 @@ header.menu-open .hamburger {
   .nav-list a {
     display: block;
     width: 100%;
-    font-size: 1.1rem; /* Slightly smaller font */
+    font-size: 1.1rem;
+    /* Slightly smaller font */
     color: var(--main-text-color);
-    font-weight: 300; /* Lighter weight */
+    font-weight: 300;
+    /* Lighter weight */
   }
 
   .nav-list a:hover {
