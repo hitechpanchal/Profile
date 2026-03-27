@@ -426,3 +426,8 @@ header.menu-open .hamburger {
     color: var(--accent-color);
   }
 }
+
+/* normal fonts */
+.normal{
+  font-size: 0.90rem;
+}
