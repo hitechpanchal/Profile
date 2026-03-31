@@ -19,6 +19,11 @@ html {
   box-sizing: border-box;
 }
 
+section{
+  padding-top: 0;
+  margin-top: 0;
+}
+
 /* Headers */
 h1 {
   display: block;
@@ -58,11 +63,14 @@ p {
 ul {
   text-indent: 0;
   margin: auto 3%;
-  font-size: 0.9rem;
+  font-size: 0.86rem;
   font-weight: 300;
   list-style-type: square;
 }
 
+li{
+  font-size: 0.86rem;
+}
 ol li {
   text-indent: 0;
   margin: auto 3%;
@@ -207,6 +215,7 @@ nav {
   /* Align to right */
   background-color: var(--main-bg-color);
   /* Dark background */
+  font-size: 90%;
 }
 
 .nav-list {
@@ -356,6 +365,43 @@ header.menu-open .hamburger {
   font-weight: 300;
 }
 
+/* normal fonts */
+.normal{
+  font-size: 0.90rem;
+}
+
+/* Scroll bar animation */
+
+.progress {
+  background: var(--accent-color);
+  height: 8px;
+  position: relative;
+}
+
+.progress:before {
+  content: '';
+  position: absolute;
+  background: #55ad9b;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  height: 8px;
+  animation: grow linear forwards;
+  animation-timeline: scroll();
+}
+
+@keyframes grow {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .progress::before {
+    animation: none;
+  }
+}
+
 @media (max-width: 768px) {
 
   /* Headers */
@@ -415,7 +461,7 @@ header.menu-open .hamburger {
   .nav-list a {
     display: block;
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     /* Slightly smaller font */
     color: var(--main-text-color);
     font-weight: 300;
@@ -425,9 +471,4 @@ header.menu-open .hamburger {
   .nav-list a:hover {
     color: var(--accent-color);
   }
-}
-
-/* normal fonts */
-.normal{
-  font-size: 0.90rem;
 }
